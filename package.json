@@ -1,0 +1,32 @@
+{
+    "name": "LongRunningOrderWatcherTest",
+    "version": "0.0.1",
+    "description": "",
+    "main": "lib/src/index.js",
+    "types": "lib/src/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "npm run build; node ./lib/index.js",
+        "clean": "shx rm -rf _bundles lib",
+        "lint": "tslint src/**/*.ts"
+    },
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "@0xproject/tslint-config": "^0.4.18",
+        "@types/lodash": "^4.14.111",
+        "shx": "^0.2.2",
+        "tslint": "5.8.0",
+        "typescript": "2.7.1"
+    },
+    "dependencies": {
+        "0x.js": "^0.38.5",
+        "@0xproject/connect": "^0.6.16",
+        "@0xproject/order-utils": "^0.0.8",
+        "@0xproject/types": "^0.8.2",
+        "@0xproject/typescript-typings": "^0.3.2",
+        "@0xproject/utils": "^0.7.2",
+        "@0xproject/web3-wrapper": "^0.7.2",
+        "lodash": "^4.17.10",
+        "web3-provider-engine": "^14.0.6"
+    }
+}
