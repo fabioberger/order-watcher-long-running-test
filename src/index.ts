@@ -3,8 +3,6 @@ import { DecodedLogEvent, ExchangeEvents, LogFillContractEventArgs, ZeroEx } fro
 import { HttpClient } from '@0xproject/connect';
 import { getOrderHashHex } from '@0xproject/order-utils';
 import {
-    BlockParamLiteral,
-    DoneCallback,
     OrderState,
     OrderStateInvalid,
     OrderStateValid,
@@ -34,7 +32,6 @@ async function mainAsync() {
     };
     zeroEx = new ZeroEx(provider, config);
     orderWatcher = await zeroEx.createOrderWatcherAsync({
-        stateLayer: BlockParamLiteral.Latest,
         isVerbose: true,
     });
 
